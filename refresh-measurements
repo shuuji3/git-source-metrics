@@ -95,7 +95,6 @@ def local_workingdir(git_url):
     if not os.path.exists(code_cache_dir):
         os.makedirs(code_cache_dir)
     working_dirname = ''.join(filter(str.isalnum, git_url))
-    print(working_dirname)
     working_dir_path = os.path.join(code_cache_dir, working_dirname)
     return working_dir_path
 
